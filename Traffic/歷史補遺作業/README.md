@@ -1,5 +1,9 @@
 # 歷史補遺作業
 
+## 規劃
+
+[PPT](assets/%E6%AD%B7%E5%8F%B2%E8%A3%9C%E9%81%BA%E4%BD%9C%E6%A5%AD%E8%A6%8F%E5%8A%83.pptx)
+
 ## RoadSideApi
 
 > [issue #6](https://gitlab.transportdata.tw/PTX/traffic/roadsidedataetl/roadsidedatav2etl/-/issues/6#note_56262)
