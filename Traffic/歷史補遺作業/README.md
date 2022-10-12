@@ -21,6 +21,8 @@
 
 ## TrafficHistoricalETL
 
+### 原本流程
+
 ```mermaid
 sequenceDiagram
     participant TrafficHistoricalETL
@@ -31,6 +33,9 @@ sequenceDiagram
     loop for 檔案時間 in array
         TrafficHistoricalETL->>+RoadSideApi: 3. FormatTransform('VDLive', 'TPE', '20200901', 檔案時間)
         RoadSideApi-->>TrafficHistoricalETL: 4. 轉換結果
-        TrafficHistoricalETL->>+MongoDb: 5. 儲存
+        TrafficHistoricalETL->>+MongoDb: 5. 儲存轉換結果
     end
 ```
+
+
+
