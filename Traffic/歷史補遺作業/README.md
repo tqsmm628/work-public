@@ -12,16 +12,25 @@
   - Method: GET
   - API: [http://192.168.99.190:8888/RoadsideDataV2ETL/API/FileTimeList/VDLive/20200901?authorityCode=TPE](http://192.168.99.190:8888/RoadsideDataV2ETL/API/FileTimeList/VDLive/20200901?authorityCode=TPE)
   - Remark: 若資料不存在或資料夾為空則會取得空陣列回應
+  - 後面用函式表示: `FileTimeList(資料型別, 業管機關, 日期)`
 - 轉換指定[日期]、[時間]、[業管機關]的原始路況檔案 (時間格式: HHmm)
   - Method: GET
   - API: [http://192.168.99.190:8888/RoadsideDataV2ETL/API/FormatTransform/VDLive/20200901/0000?authorityCode=TPE&format=JSON](http://192.168.99.190:8888/RoadsideDataV2ETL/API/FormatTransform/VDLive/20200901/0000?authorityCode=TPE&format=JSON)
   - Remark: 與最早設計的 API 不同，一次僅能指定一個業管機關簡碼和一個轉換輸出格式
+  - 後面用函式表示: `FormatTransform(資料型別, 業管機關, 日期, 時間)`
 
-## 路況歷史ETL
+## TrafficHistoricalETL
 
 ```mermaid
 sequenceDiagram
-    Alice->>John: Hello John, how are you?
-    John-->>Alice: Great!
-    Alice-)John: See you later!
+    participant TrafficHistoricalETL
+    participant RoadSideApi
+    participant MongoDb
+    TrafficHistoricalETL->>+RoadSideApi: 1. FileTimeList('VDLive', 'TPE', '20200901')
+    RoadSideApi-->>TrafficHistoricalETL: 2. ['0000', '0001', ...]
+    loop for 檔案時間 in array
+        TrafficHistoricalETL->>+RoadSideApi: 3. FormatTransform('VDLive', 'TPE', '20200901', 檔案時間)
+        RoadSideApi-->>TrafficHistoricalETL: 4. 轉換結果
+        TrafficHistoricalETL->>+MongoDb: 5. 儲存
+    end
 ```
