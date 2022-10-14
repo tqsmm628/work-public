@@ -9,14 +9,14 @@
 
 ## 資料表欄位對應
 
-| UI Field Name               | COLLECT_PERFORMANCE | ColPerformance |
-| --------------------------- | ------------------- | -------------- |
-| 年附徵                      | PRICE1              | AnnualAmount   |
-| 水費減收-經費               | PRICE2              | Abatement      |
-| 徵收支出-水事業手續費       | PRICE4              | HandlingFee?   |
-| 徵收支出-經濟部行政費       | PRICE5              | CentreFee?     |
-| 移列下年度-水費減收經費     | PRICE6              | NextAbatement  |
-| 預估經費淨額                | PRICE7              | SubTotal?      |
-| 撥至縣市政府經費-縣市行政費 | PRICE8              | ChiefdomFee?   |
-| 撥至縣市政府經費-各鄉鎮淨額 | PRICE9              | TownFeedback?  |
-| 水費減收比例                | PRICE3 * 100        | AbatementRate * 100  |
+| UI Field Name               | COLLECT_PERFORMANCE | ColPerformance      |
+| --------------------------- | ------------------- | ------------------- |
+| 年附徵-經費                 | PRICE1              | AnnualAmount        |
+| 水費減收-經費               | PRICE2              | Abatement           |
+| 徵收支出-水事業手續費       | PRICE4              | HandlingFee?        |
+| 徵收支出-經濟部行政費       | PRICE5              | CentreFee?          |
+| 移列下年度-水費減收經費     | PRICE6              | NextAbatement       |
+| 預估經費淨額                | PRICE7              | SubTotal?           |
+| 撥至縣市政府經費-縣市行政費 | PRICE8              | ChiefdomFee?        |
+| 撥至縣市政府經費-各鄉鎮淨額 | PRICE9              | TownFeedback?       |
+| 水費減收比例                | PRICE3 * 100        | AbatementRate * 100 |
