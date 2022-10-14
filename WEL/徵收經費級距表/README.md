@@ -2,7 +2,11 @@
 
 - [issue 35-少開一支有關徵收經費級距表的API](https://gitlab.transportdata.tw/wel/welfare/welfare-admin-api/-/issues/35)
 - [(ok)04_附錄四 資料庫規格書_v14](https://iisicloud.sharepoint.com/:w:/r/sites/111850/_layouts/15/Doc.aspx?sourcedoc=%7B0AC4AB0D-C780-4BDA-899E-8FDD60249AD4%7D&file=(ok)04_%E9%99%84%E9%8C%84%E5%9B%9B%20%E8%B3%87%E6%96%99%E5%BA%AB%E8%A6%8F%E6%A0%BC%E6%9B%B8_v14.docx&action=default&mobileredirect=true)
-  
+
+## 畫面
+
+![](https://gitlab.transportdata.tw/wel/welfare/welfare-admin-api/uploads/52427b26a7e378126ca82d1e39dcb66e/image.png)
+
 ## 資料表欄位對應
 
 | UI Field Name               | COLLECT_PERFORMANCE | ColPerformance |
