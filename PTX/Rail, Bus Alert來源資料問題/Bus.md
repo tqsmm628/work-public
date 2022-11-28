@@ -1,5 +1,8 @@
 # Bus
 
+[公車通阻來源資料問題](https://iisicloud-my.sharepoint.com/:w:/g/personal/1010496_iisigroup_com/EWofQA4SUN1EjZLPR80gGYYBz_PtrOGwfkKwFdCx6cfr7Q?e=dzUfK1)
+
+<!--
 ## 公總公車
 
 > https://web.taiwanbus.tw/eBUS/subsystem/WebService/busalertlist.ashx?City={0}
@@ -46,3 +49,4 @@
 > http://ptx.2384.com.tw/PTX/xml/BusAlertList.xml
 
 看起來沒問題。
+-->

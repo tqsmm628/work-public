@@ -1,5 +1,7 @@
 # Rail
 
+[軌道通阻來源資料問題](https://iisicloud-my.sharepoint.com/:w:/g/personal/1010496_iisigroup_com/ESMmusM4WAxKhMZeBZBs-7UB2u1tq8LOZK9O4mNxkndXEQ?e=bdEFNg)
+<!--
 ## Metro
 
 ### 臺北捷運
@@ -40,3 +42,4 @@
 
 - 正常(Status=1)：目前沒有資料可以參考，需要來源確認一下`PublishTime`的邏輯。
 - 異常(Status!=1)：看起來沒問題。
+-->
